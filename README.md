@@ -1,10 +1,10 @@
 # Capgemine
 
-**Para rodar os desafios;  
+** Para rodar os desafios;  
 *importar os projetos para um IDE;  
 *clicar no botão run;
 
-**Para rodar os testes: 
+** Para rodar os testes: 
 *Entrar no diretorio de test;  
 *Clicar no botão run;
 
