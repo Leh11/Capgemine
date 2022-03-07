@@ -5,19 +5,23 @@ public class Mediana {
     public Mediana() {
     }
 
-    public void mediana(Integer[] dados) {
+    public String mediana(String aux) {
+        String[] tmp = aux.split(" ");
+        Integer dados[] = new Integer[tmp.length];
+
+        for (int i = 0; i < dados.length; i++) {
+            dados[i] = Integer.parseInt(tmp[i]);
+        }
+
         Integer size = dados.length;
         Integer index = (size - 1) / 2;
         sort(dados, 0, size - 1);
         
-        
-        if (size % 2 == 0) {
-            System.out.printf("Mediana = %.1f", (float)(dados[index] + dados[index + 1]) / 2);
-        } else {
-            System.out.printf("Mediana = %d", dados[index]);;
-        }
-
-        //return dados[index];
+        //if (size % 2 == 0) {
+            //return ((dados[index] + dados[index + 1]) / 2);
+        //} else {
+            return dados[index].toString();
+        //}
     }
 
     private void sort(Integer[] dados, Integer inicio, Integer fim) {
